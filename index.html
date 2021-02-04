@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <title>Finances</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="logo">Finances$</h1>
+    </header>
+
+    <main class="container">
+        <section id="balance">
+            <h2 class="sr-only">Balanço</h2>
+
+            <div class="card">
+                <h3>
+                    <span>
+                        Entradas
+                    </span>
+                    <img src="./assets/income.svg" alt="Imagem de entradas">
+                </h3>
+                <p>R$ 6.000,00</p>
+            </div>
+
+            <div class="card">
+                <h3>
+                    <span>
+                        Saídas
+                    </span>
+                    <img src="./assets/expense.svg" alt="Imagem de saídas">
+                </h3>
+                <p>R$ 650,00</p>
+            </div>
+
+            <div class="card total">
+                <h3>
+                    <span>
+                        Total
+                    </span>
+                    <img src="./assets/total.svg" alt="Imagem de Total">
+                </h3>
+                <p>R$ 5.350,00</p>
+            </div>
+        </section>
+
+        <section id="transaction">
+            <h2 class="sr-only">Transações</h2>
+
+            <a href="#" class="button new">+ Nova Transação</a>
+
+            <table id="data-table">
+                <thead>
+                    <tr>
+                        <th>Descrição</th>
+                        <th>Valor</th>
+                        <th>Data</th>
+                        <th></th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="description">Projeto Site</td>
+                        <td class="income">R$ 6.000,00</td>
+                        <td class="date">25/01/2021</td>
+                        <td>
+                            <img src="./assets/minus.svg" alt="Remover transação">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="description">Luz</td>
+                        <td class="expense">- R$ 400,00</td>
+                        <td class="date">10/01/2021</td>
+                        <td>
+                            <img src="./assets/minus.svg" alt="Remover transação">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="description">Internet</td>
+                        <td class="expense">- R$ 250,00</td>
+                        <td class="date">02/01/2021</td>
+                        <td>
+                            <img src="./assets/minus.svg" alt="Remover transação">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <div class="modal-overlay active">
+        <div class="modal">
+            Hello World
+        </div>
+    </div>
+
+    <footer>
+        <p>2021 - saloon.finances$</p>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
