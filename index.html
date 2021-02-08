@@ -55,7 +55,7 @@
         <section id="transaction">
             <h2 class="sr-only">Transações</h2>
 
-            <a href="#" class="button new">+ Nova Transação</a>
+            <a href="#" class="button new" onclick="Modal.onOff()">+ Nova Transação</a>
 
             <table id="data-table">
                 <thead>
@@ -76,7 +76,7 @@
         <div class="modal">
             <div id="form">
                 <h2>Nova Transação</h2>
-                <form action="">
+                <form action="" onsubmit="Form.submit(event)">
                     <div class="input-group">
                         <label class="sr-only" for="description">Descrição</label>
                         <input type="text" id="description" name="description" placeholder="Descrição">
@@ -94,7 +94,7 @@
                     </div>
 
                     <div class="input-group actions">
-                        <a href="#" class="button cancel">Cancelar</a>
+                        <a href="#" class="button cancel" onclick="Modal.onOff()">Cancelar</a>
                         <button>Salvar</button>
                     </div>
                 </form>
@@ -103,7 +103,7 @@
     </div>
 
     <footer>
-        <p>2021 - saloon.finances$</p>
+        <p>2021 - finances$</p>
     </footer>
 
     <script src="./script.js"></script>

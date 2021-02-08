@@ -204,6 +204,10 @@ td.income {
     color: #12a454
 }
 
+table tbody td img {
+    cursor: pointer;
+}
+
 .modal-overlay {
     background: rgba(0, 0, 0, 0.7);
 
